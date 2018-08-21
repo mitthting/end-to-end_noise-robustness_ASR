@@ -1,0 +1,163 @@
+#!/bin/csh 
+#-fex
+
+############################################################
+# Shell script to perform training on clean data and run   #
+# recognition on all test sets.                            #
+# The output will be three ASCii files containing the      #
+# results for the three subsets A, B and C                 #
+# (name: clean_testx.result with x = a or b or c)          #
+#                                                          #
+# Author: Guenter Hirsch                                   #
+# Niederrhein University of Applied Sciences               #
+# Date: 13-06-06                                           #
+############################################################
+
+#### Define the following paths ############################
+############################################################
+### $REC_DIR is the subdirectory of the recognition scripts
+set REC_DIR      = /home/mit/AURORA2/RECOGNIZER
+### path to the HTK executables
+# definition is only needed in case it is not included in
+#  your standard path
+#set HTK_PATH = /packages/htk-3.3/bin.linux
+###
+# include HTK path
+#set name = `printenv PATH | grep htk`
+#if ($name == "") then
+#         setenv PATH $PATH{:}$HTK_PATH{:}
+#endif
+###########################################################
+
+#if ($#argv != 1) then
+#	echo ""
+#	echo "usage: "$argv[0]" <path to working directory>"
+#	echo ""
+#	exit
+#endif
+
+### $FEAT_ROOT is the root directory of the feature files
+# definition is done on the command line
+set FEAT_ROOT    = /home/mit/AURORA2/testtime
+### $LIST_FILE is only a temporary list file
+set LIST_FILE    = $FEAT_ROOT/tmp_clean.list
+
+
+# Training Data Parameters 
+set TRAIN_LIST  = $REC_DIR/SCRIPTS/CLEANTR08.SCP
+set Proto       = $REC_DIR/LIB/PROTO.18
+set HMM_DIR     = $FEAT_ROOT/HMM08CleanCond
+set CONFIG      = $REC_DIR/LIB/CONFIG_TR
+set WORD_LIST   = $REC_DIR/LIB/WORDS3
+set WORD_LISTSP = $REC_DIR/LIB/WORDS4
+set LABELSP     = $REC_DIR/LABELS/CLEAN08TR_SP.MLF
+set LABELS      = $REC_DIR/LABELS/CLEAN08TR.MLF
+set ED_CMDFILE1 = $REC_DIR/LIB/SIL1.HED
+set ED_CMDFILE2 = $REC_DIR/LIB/MIX2_16.HED
+set ED_CMDFILE3 = $REC_DIR/LIB/MIX3_16.HED
+
+# Test Data Parameters
+set N1LIST      = $REC_DIR/SCRIPTS/NOISE1.SCP
+set N1LABELS    = $REC_DIR/LABELS/N1.MLF
+set N2LIST      = $REC_DIR/SCRIPTS/NOISE2.SCP
+set N2LABELS    = $REC_DIR/LABELS/N2.MLF
+set N3LIST      = $REC_DIR/SCRIPTS/NOISE3.SCP
+set N3LABELS    = $REC_DIR/LABELS/N3.MLF
+set N4LIST      = $REC_DIR/SCRIPTS/NOISE4.SCP
+set N4LABELS    = $REC_DIR/LABELS/N4.MLF
+
+set flags       = "-p 0.0 -s 0.0"
+set NET         = $REC_DIR/LIB/WDNET
+set DICT        = $REC_DIR/LIB/DICT
+
+set BINDIR      = $REC_DIR/BIN
+set NUM_COEF    = 39
+set PAR_TYPE    = MFCC_E_D_A
+# --------------------------------------------------------------------------------
+#
+# HMM TRAINING
+#
+#
+mkdir $HMM_DIR
+foreach i (0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 )
+	mkdir {$HMM_DIR}/hmm{$i}
+end 
+
+# Produce seed HMM
+# Generate initial HMM "hmmdef" with global data means and variances
+# Creates a file "vFloors" containing the global variances times 0.01
+#
+awk '{printf("'$FEAT_ROOT'/%s\n", $1)}' $TRAIN_LIST > $LIST_FILE
+HCompV -T 2 -D -C $CONFIG -o hmmdef -f 0.01 -m -S $LIST_FILE -M {$HMM_DIR}/hmm0 $Proto
+echo "Seed Hmm successfully produced"
+
+$BINDIR/macro $NUM_COEF $PAR_TYPE {$HMM_DIR}/hmm0/vFloors {$HMM_DIR}/hmm0/macros
+# creates the file "models" containing the HMM definition of all 11 digits and the silence model
+$BINDIR/models_1mixsil {$HMM_DIR}/hmm0/hmmdef {$HMM_DIR}/hmm0/models
+
+#Training 
+foreach i (1 2 3 )
+	echo Iteration Number $i
+	@ j = $i - 1
+	HERest -D -C $CONFIG -I $LABELS   -t 250.0 150.0 1000.0 -S $LIST_FILE \
+        -H {$HMM_DIR}/hmm{$j}/macros -H {$HMM_DIR}/hmm{$j}/models -M {$HMM_DIR}/hmm{$i} $WORD_LIST
+end
+echo "3 Iterations completed"
+
+rm -f -R {$HMM_DIR}/hmm4
+cp -R {$HMM_DIR}/hmm3 {$HMM_DIR}/hmm4
+$BINDIR/spmodel_gen {$HMM_DIR}/hmm3/models {$HMM_DIR}/hmm4/models
+
+HHEd -T 2 -H {$HMM_DIR}/hmm4/macros -H {$HMM_DIR}/hmm4/models -M {$HMM_DIR}/hmm5 $ED_CMDFILE1 $WORD_LISTSP
+echo "SP model fixed"
+
+
+foreach i (6 7 8 )
+	@ j = $i - 1
+	HERest -C $CONFIG -I $LABELSP  -S $LIST_FILE \
+        -H {$HMM_DIR}/hmm{$j}/macros -H {$HMM_DIR}/hmm{$j}/models -M {$HMM_DIR}/hmm{$i} $WORD_LISTSP
+end
+echo "6 Iterations completed"
+
+HHEd -T 2 -H {$HMM_DIR}/hmm8/macros -H {$HMM_DIR}/hmm8/models -M {$HMM_DIR}/hmm9 $ED_CMDFILE2 $WORD_LISTSP
+echo "2 Gaussians per mixture created"
+ 
+foreach i (10 11 12 )
+	@ j = $i - 1
+	HERest -C $CONFIG -I $LABELSP  -S $LIST_FILE \
+        -H {$HMM_DIR}/hmm{$j}/macros -H {$HMM_DIR}/hmm{$j}/models -M {$HMM_DIR}/hmm{$i} $WORD_LISTSP
+end
+echo "9 Iterations completed"
+
+HHEd -T 2 -H {$HMM_DIR}/hmm12/macros -H {$HMM_DIR}/hmm12/models -M {$HMM_DIR}/hmm13 $ED_CMDFILE3 $WORD_LISTSP
+echo "3 Gaussians per mixture created"
+
+foreach i (14 15 16 17 18 19 20 )
+	@ j = $i - 1
+	HERest -C $CONFIG -I $LABELSP  -S $LIST_FILE \
+        -H {$HMM_DIR}/hmm{$j}/macros -H {$HMM_DIR}/hmm{$j}/models -M {$HMM_DIR}/hmm{$i} $WORD_LISTSP
+end
+echo "16 Iterations completed"
+
+
+
+
+
+#
+# TESTING of set c
+#
+echo "Now Testing files of set c with 3 mixture HMMs"
+
+echo "Noise: MIRS filtered subway"
+set snr    = (clean1)
+set count  = 1
+while ($count <= $#snr)
+    printf "\nSubway(MIRS)   condition: %s\n" $snr[$count] >> $FEAT_ROOT/clean_testc.result
+    awk '{printf("'$FEAT_ROOT'/Mfc08TS_setc/'$snr[$count]'/%s\n", $1)}' $N1LIST > $LIST_FILE
+    HVite -D -H $mac_file -H $mod_file -S $LIST_FILE -C $CONFIG  -w $NET -l '*' -i $FEAT_ROOT/result_clean.mlf  $flags $DICT $WORD_LISTSP
+    HResults -e "???" sil -e "???" sp   -I $N1LABELS $WORD_LISTSP $FEAT_ROOT/result_clean.mlf >> $FEAT_ROOT/clean_testc.result
+    @ count++
+end
+
+
+

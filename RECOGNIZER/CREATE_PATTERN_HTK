@@ -1,0 +1,80 @@
+#!/bin/csh
+
+############################################################
+# Shell script to extract the features of all training and #
+# test data with the HTK tool HCopy.                       #
+# Author: G. Hirsch  date: 28.1.2000                       #
+#  COPYRIGHT (C) 1999 BY ERICSSON EUROLAB DEUTSCHLAND GmbH #
+############################################################
+
+#### Define the following pathes ###########################
+############################################################
+### $SPEECH_ROOT is the root directory of the wave files
+### This is the place where you copied the speechdata subdirectory.
+set SPEECH_ROOT  = /home/jack/htk/s0/AURORA2
+### $REC_DIR is the subdirectory of the recognition scripts
+set REC_DIR      = /home/jack/htk/s0/AURORA2/RECOGNIZER
+### $FEAT_ROOT is the root directory of the feature files
+set FEAT_ROOT    = /home/jack/htk/s0/AURORA2/FEAT_HTK
+### $LIST_FILE is only a temporary list file
+set LIST_FILE    = $FEAT_ROOT/tmp.list
+############################################################
+set CONFIG       = $REC_DIR/LIB/CONFIG_HCOPY
+
+
+set test_dirs = ( N1_SNR-5 N1_SNR15 N2_SNR-5 N2_SNR15 N3_SNR-5 N3_SNR15 N4_SNR-5 N4_SNR15 clean1 clean4 N1_SNR0 N1_SNR20 N2_SNR0 N2_SNR20 N3_SNR0 N3_SNR20 N4_SNR0 N4_SNR20 clean2 N1_SNR10 N1_SNR5  N2_SNR10 N2_SNR5 N3_SNR10 N3_SNR5 N4_SNR10 N4_SNR5 clean3 )
+
+set train_dirs = ( N1_SNR10 N1_SNR20 N2_SNR10 N2_SNR20 N3_SNR10 N3_SNR20 N4_SNR10 N4_SNR20 clean1 clean3 N1_SNR15 N1_SNR5 N2_SNR15 N2_SNR5 N3_SNR15 N3_SNR5 N4_SNR15 N4_SNR5 clean2 clean4 )
+
+#goto setc
+
+### create subdirectories for test sets a and b and c
+mkdir $FEAT_ROOT
+mkdir $FEAT_ROOT/Mfc08TS_seta
+mkdir $FEAT_ROOT/Mfc08TS_setb
+mkdir $FEAT_ROOT/Mfc08TS_setc
+set ndirs = $#test_dirs
+while ($ndirs > 0)
+	mkdir $FEAT_ROOT/Mfc08TS_seta/$test_dirs[$ndirs]
+	mkdir $FEAT_ROOT/Mfc08TS_setb/$test_dirs[$ndirs]
+	mkdir $FEAT_ROOT/Mfc08TS_setc/$test_dirs[$ndirs]
+	@ ndirs--
+end
+### create subdirectories for multicondition training
+mkdir $FEAT_ROOT/Mfc08_multiTR
+set ndirs = $#train_dirs
+while ($ndirs > 0)
+	mkdir $FEAT_ROOT/Mfc08_multiTR/$train_dirs[$ndirs]
+	@ ndirs--
+end
+### create subdirectory for clean training
+mkdir $FEAT_ROOT/Mfc08_cleanTR
+
+### perform feature extraction for multicondition training data
+set list_file   = $REC_DIR{/SCRIPTS/MULTITR08_HCOPY.SCP}
+awk '{printf("'$SPEECH_ROOT'/%s '$FEAT_ROOT'/%s\n", $1, $2)}' $list_file > $LIST_FILE
+HCopy -C $CONFIG -S $LIST_FILE -T 1
+
+### perform feature extraction for clean training data
+set list_file   = $REC_DIR{/SCRIPTS/CLEANTR08_HCOPY.SCP}
+awk '{printf("'$SPEECH_ROOT'/%s '$FEAT_ROOT'/%s\n", $1, $2)}' $list_file > $LIST_FILE
+HCopy -C $CONFIG -S $LIST_FILE -T 1
+
+### perform feature extraction for test set a data
+set list_file   = $REC_DIR{/SCRIPTS/TSA08_HCOPY.SCP}
+awk '{printf("'$SPEECH_ROOT'/%s '$FEAT_ROOT'/%s\n", $1, $2)}' $list_file > $LIST_FILE
+HCopy -C $CONFIG -S $LIST_FILE -T 1
+
+setb:
+### perform feature extraction for test set b data
+set list_file   = $REC_DIR{/SCRIPTS/TSB08_HCOPY.SCP}
+awk '{printf("'$SPEECH_ROOT'/%s '$FEAT_ROOT'/%s\n", $1, $2)}' $list_file > $LIST_FILE
+HCopy -C $CONFIG -S $LIST_FILE -T 1
+
+setc:
+### perform feature extraction for test set c data
+set list_file   = $REC_DIR{/SCRIPTS/TSC08_HCOPY.SCP}
+awk '{printf("'$SPEECH_ROOT'/%s '$FEAT_ROOT'/%s\n", $1, $2)}' $list_file > $LIST_FILE
+HCopy -C $CONFIG -S $LIST_FILE -T 1
+
+rm $LIST_FILE

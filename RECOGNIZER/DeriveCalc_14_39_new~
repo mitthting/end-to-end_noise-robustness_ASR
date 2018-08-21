@@ -1,0 +1,153 @@
+#!/bin/tcsh
+
+
+############################################################
+# Shell script to transform 14-demension feature to 39     #
+# dimension feature                                        #
+#                                                          #
+# Author: Jack Wu                                          #
+# National Sun Yat Sen University                          #
+# Date: 2017-04-23                                         #
+############################################################
+
+############################################################
+### $SPEECH_ROOT is the root directory of the wave files
+### This is the place where you copied the speechdata subdirectory.
+set SPEECH_ROOT  = /home/mit/AURORA2
+### $REC_DIR is the subdirectory of the recognition SCRIPTS
+set REC_DIR      = /home/mit/AURORA2/RECOGNIZER
+###########################################################
+
+#### Define the feature extraction executables ##############
+#############################################################
+### $DELTA_EXE is tthe program for determing the Delta and Delta-Deltas
+set DELTA_EXE   = /home/mit/AURORA2/AFE/DerivCalc/Linux/bin/derivCalc
+set delta_option = "-COMB "
+#############################################################
+
+set FEAT_ROOT_14    = /home/mit/AURORA2/AFE_DAE_no_clean_HMM_clean_d_clean_nd_v1
+set FEAT_ROOT_39    = /home/mit/AURORA2/AFE_DAE_no_clean_HMM_clean_d_clean_nd_v1_39
+
+set test_dirs = ( N1_SNR-5 N1_SNR15 N2_SNR-5 N2_SNR15 N3_SNR-5 N3_SNR15 N4_SNR-5 N4_SNR15 clean1 clean4 N1_SNR0 N1_SNR20 N2_SNR0 N2_SNR20 N3_SNR0 N3_SNR20 N4_SNR0 N4_SNR20 clean2 N1_SNR10 N1_SNR5  N2_SNR10 N2_SNR5 N3_SNR10 N3_SNR5 N4_SNR10 N4_SNR5 clean3 )
+
+set train_dirs = ( N1_SNR10 N1_SNR20 N2_SNR10 N2_SNR20 N3_SNR10 N3_SNR20 N4_SNR10 N4_SNR20 clean1 clean3 N1_SNR15 N1_SNR5 N2_SNR15 N2_SNR5 N3_SNR15 N3_SNR5 N4_SNR15 N4_SNR5 clean2 clean4 )
+
+### create subdirectories for test sets a and b and c
+mkdir $FEAT_ROOT_39
+mkdir $FEAT_ROOT_39/Mfc08TS_seta
+mkdir $FEAT_ROOT_39/Mfc08TS_setb
+mkdir $FEAT_ROOT_39/Mfc08TS_setc
+set ndirs = $#test_dirs
+while ($ndirs > 0)
+	mkdir $FEAT_ROOT_39/Mfc08TS_seta/$test_dirs[$ndirs]
+	mkdir $FEAT_ROOT_39/Mfc08TS_setb/$test_dirs[$ndirs]
+	mkdir $FEAT_ROOT_39/Mfc08TS_setc/$test_dirs[$ndirs]
+	@ ndirs--
+end
+
+
+### create subdirectories for multicondition training(clean denoise/clean no denoise)
+mkdir $FEAT_ROOT_39/Mfc08_multiTR_D
+set ndirs = $#train_dirs
+while ($ndirs > 0)
+	mkdir $FEAT_ROOT_39/Mfc08_multiTR_D/$train_dirs[$ndirs]
+	@ ndirs--
+end
+
+mkdir $FEAT_ROOT_39/Mfc08_multiTR_ND
+set ndirs = $#train_dirs
+while ($ndirs > 0)
+	mkdir $FEAT_ROOT_39/Mfc08_multiTR_ND/$train_dirs[$ndirs]
+	@ ndirs--
+end
+
+
+
+### create subdirectory for clean training(clean denoise/clean no denoise)
+mkdir $FEAT_ROOT_39/Mfc08_cleanTR_D
+mkdir $FEAT_ROOT_39/Mfc08_cleanTR_ND
+
+
+
+
+
+### perform feature transform for multicondition training data(clean denoise/clean no denoise)
+set list_file   = $REC_DIR{/SCRIPTS/MULTITR08_D.SCP}
+set in_out_files   = `awk '{print $1}' $list_file`
+set nfiles     = $#in_out_files
+while ($nfiles > 0)
+        $DELTA_EXE $delta_option $FEAT_ROOT_14/$in_out_files[$nfiles] $FEAT_ROOT_39/$in_out_files[$nfiles]
+	@ nfiles--
+end
+
+set list_file   = $REC_DIR{/SCRIPTS/MULTITR08_ND.SCP}
+set in_out_files   = `awk '{print $1}' $list_file`
+set nfiles     = $#in_out_files
+while ($nfiles > 0)
+        $DELTA_EXE $delta_option $FEAT_ROOT_14/$in_out_files[$nfiles] $FEAT_ROOT_39/$in_out_files[$nfiles]
+	@ nfiles--
+end
+
+
+
+
+
+### perform feature extraction for clean training data(clean denoise/clean no denoise)
+set list_file   = $REC_DIR{/SCRIPTS/CLEANTR08_D.SCP}
+set in_out_files   = `awk '{print $1}' $list_file`
+set nfiles     = $#in_out_files
+while ($nfiles > 0)
+        $DELTA_EXE $delta_option $FEAT_ROOT_14/$in_out_files[$nfiles] $FEAT_ROOT_39/$in_out_files[$nfiles]
+	@ nfiles--
+end
+
+set list_file   = $REC_DIR{/SCRIPTS/CLEANTR08_ND.SCP}
+set in_out_files   = `awk '{print $1}' $list_file`
+set nfiles     = $#in_out_files
+while ($nfiles > 0)
+        $DELTA_EXE $delta_option $FEAT_ROOT_14/$in_out_files[$nfiles] $FEAT_ROOT_39/$in_out_files[$nfiles]
+	@ nfiles--
+end
+
+
+
+
+
+### perform feature extraction for test set a data
+set list_file   = $REC_DIR{/SCRIPTS/TSA08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+set count = 1
+while ($count <= $nfiles)
+	$DELTA_EXE $delta_option $FEAT_ROOT_14/$out_files[$nfiles] $FEAT_ROOT_39/$out_files[$nfiles]
+	@ nfiles--
+end
+
+### perform feature extraction for test set b data
+set list_file   = $REC_DIR{/SCRIPTS/TSB08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+set count = 1
+while ($count <= $nfiles)
+	$DELTA_EXE $delta_option $FEAT_ROOT_14/$out_files[$nfiles] $FEAT_ROOT_39/$out_files[$nfiles]
+	@ nfiles--
+end
+
+### perform feature extraction for test set c data
+set list_file   = $REC_DIR{/SCRIPTS/TSC08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+set count = 1
+while ($count <= $nfiles)
+	$DELTA_EXE $delta_option $FEAT_ROOT_14/$out_files[$nfiles] $FEAT_ROOT_39/$out_files[$nfiles]
+	@ nfiles--
+end
+
+
+
+
+
+

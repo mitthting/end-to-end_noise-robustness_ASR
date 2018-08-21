@@ -1,0 +1,27 @@
+# template used for front end processing
+
+TARGETKIND 	= MFCC_0_E
+SOURCEFORMAT	= NOHEAD
+HNET:TRACE 	= 1
+TARGETRATE 	= 100000.0
+SAVECOMPRESSED 	= F
+SAVEWITHCRC 	= F
+WINDOWSIZE 	= 250000.0
+USEHAMMING 	= T
+ENORMALISE	= F
+ZMEANSOURCE	= F
+PREEMCOEF 	= 0.97
+NUMCHANS 	= 23
+CEPLIFTER 	= 22
+NUMCEPS 	= 12
+SOURCERATE	= 1250.0
+LOFREQ          = 64
+HIFREQ          = 4000
+#BYTEORDER       = NONVAX 
+# LOPASS was used instead of LOFREQ in older version of HTK
+LOPASS          = 64
+# Next lines to read & write binary data machine dependent
+#NATURALREADORDER  = TRUE
+NATURALWRITEORDER = TRUE 
+
+

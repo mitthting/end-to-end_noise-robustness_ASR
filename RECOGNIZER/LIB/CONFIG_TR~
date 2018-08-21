@@ -1,0 +1,6 @@
+TARGETKIND 	= MFCC_E_D_A
+DELTAWINDOW	= 3
+ACCWINDOW	= 2
+HNET:TRACE 	= 2
+# next line to read data machine dependent
+#NATURALREADORDER = TRUE

@@ -1,0 +1,280 @@
+
+Subway   condition: clean1
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 20:40:29 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N1.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=96.10 [H=962, S=39, N=1001]
+WORD: %Corr=99.14, Acc=98.68 [H=3229, D=11, S=17, I=15, N=3257]
+===================================================================
+
+Subway   condition: N1_SNR20
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 20:46:13 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N1.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=93.41 [H=935, S=66, N=1001]
+WORD: %Corr=98.50, Acc=97.61 [H=3208, D=8, S=41, I=29, N=3257]
+===================================================================
+
+Subway   condition: N1_SNR15
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 20:51:59 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N1.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=90.91 [H=910, S=91, N=1001]
+WORD: %Corr=97.67, Acc=96.47 [H=3181, D=9, S=67, I=39, N=3257]
+===================================================================
+
+Subway   condition: N1_SNR10
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 20:57:47 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N1.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=85.81 [H=859, S=142, N=1001]
+WORD: %Corr=95.64, Acc=94.44 [H=3115, D=29, S=113, I=39, N=3257]
+===================================================================
+
+Subway   condition: N1_SNR5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:03:37 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N1.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=71.83 [H=719, S=282, N=1001]
+WORD: %Corr=89.81, Acc=88.36 [H=2925, D=110, S=222, I=47, N=3257]
+===================================================================
+
+Subway   condition: N1_SNR0
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:09:26 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N1.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=41.46 [H=415, S=586, N=1001]
+WORD: %Corr=67.73, Acc=66.90 [H=2206, D=677, S=374, I=27, N=3257]
+===================================================================
+
+Subway   condition: N1_SNR-5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:15:17 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N1.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=17.48 [H=175, S=826, N=1001]
+WORD: %Corr=26.19, Acc=26.13 [H=853, D=1993, S=411, I=2, N=3257]
+===================================================================
+
+Babble   condition: clean2
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:20:58 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N2.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=95.50 [H=956, S=45, N=1001]
+WORD: %Corr=99.06, Acc=98.52 [H=3277, D=14, S=17, I=18, N=3308]
+===================================================================
+
+Babble   condition: N2_SNR20
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:26:48 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N2.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=93.81 [H=939, S=62, N=1001]
+WORD: %Corr=98.22, Acc=97.73 [H=3249, D=11, S=48, I=16, N=3308]
+===================================================================
+
+Babble   condition: N2_SNR15
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:32:41 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N2.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=91.91 [H=920, S=81, N=1001]
+WORD: %Corr=97.70, Acc=97.04 [H=3232, D=11, S=65, I=22, N=3308]
+===================================================================
+
+Babble   condition: N2_SNR10
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:38:35 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N2.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=87.01 [H=871, S=130, N=1001]
+WORD: %Corr=96.40, Acc=95.28 [H=3189, D=30, S=89, I=37, N=3308]
+===================================================================
+
+Babble   condition: N2_SNR5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:44:31 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N2.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=68.13 [H=682, S=319, N=1001]
+WORD: %Corr=89.69, Acc=87.55 [H=2967, D=131, S=210, I=71, N=3308]
+===================================================================
+
+Babble   condition: N2_SNR0
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:50:28 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N2.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=33.97 [H=340, S=661, N=1001]
+WORD: %Corr=65.87, Acc=62.15 [H=2179, D=725, S=404, I=123, N=3308]
+===================================================================
+
+Babble   condition: N2_SNR-5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 21:56:25 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N2.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=11.29 [H=113, S=888, N=1001]
+WORD: %Corr=30.38, Acc=27.18 [H=1005, D=1605, S=698, I=106, N=3308]
+===================================================================
+
+Car   condition: clean3
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:02:06 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N3.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=95.80 [H=959, S=42, N=1001]
+WORD: %Corr=99.05, Acc=98.39 [H=3321, D=12, S=20, I=22, N=3353]
+===================================================================
+
+Car   condition: N3_SNR20
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:07:57 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N3.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=94.51 [H=946, S=55, N=1001]
+WORD: %Corr=98.54, Acc=98.03 [H=3304, D=11, S=38, I=17, N=3353]
+===================================================================
+
+Car   condition: N3_SNR15
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:13:52 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N3.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=93.21 [H=933, S=68, N=1001]
+WORD: %Corr=98.12, Acc=97.61 [H=3290, D=14, S=49, I=17, N=3353]
+===================================================================
+
+Car   condition: N3_SNR10
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:19:46 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N3.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=88.51 [H=886, S=115, N=1001]
+WORD: %Corr=96.27, Acc=95.74 [H=3228, D=34, S=91, I=18, N=3353]
+===================================================================
+
+Car   condition: N3_SNR5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:25:41 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N3.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=70.83 [H=709, S=292, N=1001]
+WORD: %Corr=88.16, Acc=87.80 [H=2956, D=216, S=181, I=12, N=3353]
+===================================================================
+
+Car   condition: N3_SNR0
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:31:39 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N3.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=33.37 [H=334, S=667, N=1001]
+WORD: %Corr=53.50, Acc=53.44 [H=1794, D=1352, S=207, I=2, N=3353]
+===================================================================
+
+Car   condition: N3_SNR-5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:37:35 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N3.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=13.89 [H=139, S=862, N=1001]
+WORD: %Corr=20.61, Acc=20.58 [H=691, D=2298, S=364, I=1, N=3353]
+===================================================================
+
+Exhibition   condition: clean4
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:43:11 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N4.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=96.00 [H=961, S=40, N=1001]
+WORD: %Corr=99.14, Acc=98.49 [H=3213, D=9, S=19, I=21, N=3241]
+===================================================================
+
+Exhibition   condition: N4_SNR20
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:48:55 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N4.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=92.91 [H=930, S=71, N=1001]
+WORD: %Corr=98.24, Acc=97.41 [H=3184, D=9, S=48, I=27, N=3241]
+===================================================================
+
+Exhibition   condition: N4_SNR15
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 22:54:41 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N4.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=91.61 [H=917, S=84, N=1001]
+WORD: %Corr=97.56, Acc=96.67 [H=3162, D=14, S=65, I=29, N=3241]
+===================================================================
+
+Exhibition   condition: N4_SNR10
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 23:00:30 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N4.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=85.01 [H=851, S=150, N=1001]
+WORD: %Corr=95.03, Acc=94.11 [H=3080, D=35, S=126, I=30, N=3241]
+===================================================================
+
+Exhibition   condition: N4_SNR5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 23:06:21 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N4.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=70.93 [H=710, S=291, N=1001]
+WORD: %Corr=88.52, Acc=87.60 [H=2869, D=136, S=236, I=30, N=3241]
+===================================================================
+
+Exhibition   condition: N4_SNR0
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 23:12:14 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N4.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=38.86 [H=389, S=612, N=1001]
+WORD: %Corr=64.79, Acc=64.36 [H=2100, D=764, S=377, I=14, N=3241]
+===================================================================
+
+Exhibition   condition: N4_SNR-5
+====================== HTK Results Analysis =======================
+  Date: Tue Jan 25 23:18:06 2000
+  Ref : /pkg/recdata/aurora/recognizer/labels/N4.mlf
+  Rec : /tmp/test_new/result_multi.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=14.69 [H=147, S=854, N=1001]
+WORD: %Corr=24.41, Acc=24.34 [H=791, D=2076, S=374, I=2, N=3241]
+===================================================================

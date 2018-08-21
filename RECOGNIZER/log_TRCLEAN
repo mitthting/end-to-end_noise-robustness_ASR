@@ -1,0 +1,3376 @@
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Stream 1
+ Mean Vector 
+      -6.66    -2.12    -1.57    -4.35    -1.62    -2.44    -0.67    -1.93    -0.54    -1.15    -0.27    -1.42 ...
+ Variance Vector 
+     100.08    36.81    18.52    12.58     8.23     5.64     4.29     3.62     3.19     2.82     2.15     1.89 ...
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Seed Hmm successfully produced
+CREATING SILENCE MODEL
+Iteration Number 1
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Pruning-On[250.0 150.0 1000.0]
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Iteration Number 2
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Pruning-On[250.0 150.0 1000.0]
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Iteration Number 3
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Pruning-On[250.0 150.0 1000.0]
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+3 Iterations completed
+HHEd
+ 13/13 Models Loaded [18 states max, 1 mixes max]
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 23.744072, Std Dev GC = 14.546479
+           sil : mixup 1 -> 2
+           sil : mixup 1 -> 2
+           sil : mixup 1 -> 2
+ MU: Number of mixes increased from 3 to 6
+
+AT 2 4 0.200 {}
+ Adding transitions to transP
+ AT: 1 transP matrices adjusted
+
+AT 4 2 0.200 {}
+ Adding transitions to transP
+ AT: 1 transP matrices adjusted
+
+AT 1 3 0.300 {}
+ Adding transitions to transP
+ AT: 1 transP matrices adjusted
+
+TI silst {}
+ Tie items
+
+Saving new HMM files ...
+Edit Complete
+SP model fixed
+Pruning-Off
+Pruning-Off
+Pruning-Off
+6 Iterations completed
+HHEd
+ 13/13 Models Loaded [18 states max, 2 mixes max]
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 21.971216, Std Dev GC = 15.082608
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+           one : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 22.454391, Std Dev GC = 14.754618
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+           two : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 22.619036, Std Dev GC = 14.484311
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+         three : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 22.910393, Std Dev GC = 14.254453
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+          four : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 22.771645, Std Dev GC = 14.161432
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+          five : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 21.970768, Std Dev GC = 14.664666
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+           six : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 21.952738, Std Dev GC = 14.537861
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+         seven : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 21.762211, Std Dev GC = 14.352083
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+         eight : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 21.894045, Std Dev GC = 14.459512
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+          nine : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 22.073948, Std Dev GC = 14.751261
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+            oh : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 2 {}
+ Mixup to 2 components per stream
+  Mean GC = 22.270882, Std Dev GC = 15.053643
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+          zero : mixup 1 -> 2
+ MU: Number of mixes increased from 16 to 32
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 22.320311, Std Dev GC = 14.832850
+           sil : mixup 2 -> 3
+           sil : mixup 1 -> 3
+           sil : mixup 2 -> 3
+ MU: Number of mixes increased from 5 to 9
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 21.967661, Std Dev GC = 15.202771
+            sp : mixup 3 -> 3
+ MU: Number of mixes increased from 3 to 3
+
+Saving new HMM files ...
+Edit Complete
+2 Gaussians per mixture created
+Pruning-Off
+Pruning-Off
+Pruning-Off
+9 Iterations completed
+HHEd
+ 13/13 Models Loaded [18 states max, 3 mixes max]
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 17.867775, Std Dev GC = 15.866221
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+           one : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 18.032549, Std Dev GC = 15.655339
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+           two : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 18.010904, Std Dev GC = 15.543208
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+         three : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 18.193913, Std Dev GC = 15.381527
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+          four : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 18.111591, Std Dev GC = 15.309683
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+          five : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 17.602621, Std Dev GC = 15.627462
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+           six : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 17.557804, Std Dev GC = 15.517944
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+         seven : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 17.321192, Std Dev GC = 15.452249
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+         eight : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 17.361107, Std Dev GC = 15.555938
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+          nine : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 17.418877, Std Dev GC = 15.698066
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+            oh : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 3 {}
+ Mixup to 3 components per stream
+  Mean GC = 17.435606, Std Dev GC = 15.989627
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+          zero : mixup 2 -> 3
+ MU: Number of mixes increased from 32 to 48
+
+MU 6 {}
+ Mixup to 6 components per stream
+  Mean GC = 17.397463, Std Dev GC = 15.855487
+           sil : mixup 3 -> 6
+           sil : mixup 3 -> 6
+           sil : mixup 3 -> 6
+ MU: Number of mixes increased from 9 to 18
+
+MU 6 {}
+ Mixup to 6 components per stream
+  Mean GC = 17.027054, Std Dev GC = 16.122858
+            sp : mixup 6 -> 6
+ MU: Number of mixes increased from 6 to 6
+
+Saving new HMM files ...
+Edit Complete
+3 Gaussians per mixture created
+Pruning-Off
+Pruning-Off
+Pruning-Off
+Pruning-Off
+Pruning-Off
+Pruning-Off
+Pruning-Off
+16 Iterations completed
+Now Testing files of set a with 3 mixture HMMs
+Noise: subway
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Noise: babble
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Noise: car
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Noise: exhibition
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Now Testing files of set b with 3 mixture HMMs
+Noise: restaurant
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Noise: street
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Noise: airport
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Noise: train station
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Now Testing files of set c with 3 mixture HMMs
+Noise: MIRS filtered subway
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+Noise: MIRS filtered street
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+#                 NATURALREADORDER              TRUE
+# HNET            TRACE                          2
+#                 ACCWINDOW                      2
+#                 DELTAWINDOW                    3
+#                 TARGETKIND            MFCC_E_D_A
+
+Building word sil
+Building word sp
+ WARNING [-8232]  ExpandWordNet: Pronunciation 1 of sp is 'tee' word in HVite
+Building word oh
+Building word !NULL
+Building word zero
+Building word nine
+Building word eight
+Building word seven
+Building word six
+Building word five
+Building word four
+Building word three
+Building word two
+Building word one
+Building word sil
+Building word !NULL
+Building word !NULL
+33 nodes
+ = 17 word (0 null), init 14, int 0, fin 0, cf 0
+78 links = int 14, ext 62 (0 for null words)
+
+HTK Configuration Parameters[5]
+  Module/Tool     Parameter                  Value
+                  NATURALREADORDER              TRUE
+  HNET            TRACE                          2
+                  ACCWINDOW                      2
+                  DELTAWINDOW                    3
+                  TARGETKIND            MFCC_E_D_A
+

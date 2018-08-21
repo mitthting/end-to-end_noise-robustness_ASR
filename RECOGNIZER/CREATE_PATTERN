@@ -1,0 +1,115 @@
+#!/bin/tcsh
+
+############################################################
+# Shell script to extract the features of all training and #
+# test data.                                               #
+# Author: G. Hirsch  date: 10.12.99                        #
+#  COPYRIGHT (C) 1999 BY ERICSSON EUROLAB DEUTSCHLAND GmbH #
+############################################################
+
+#### Define the following pathes ###########################
+############################################################
+### $SPEECH_ROOT is the root directory of the wave files
+### This is the place where you copied the speechdata subdirectory.
+set SPEECH_ROOT  = /s0/AURORA2
+### $REC_DIR is the subdirectory of the recognition scripts
+set REC_DIR      = /s0/AURORA2/RECOGNIZER
+### $FEAT_ROOT is the root directory of the feature files
+set FEAT_ROOT    = /s0/AURORA2/FEAT
+
+#### Define the feature extraction executable ##############
+############################################################
+### $EXE is the frontend executable
+set EXE          = /s0/AURORA2/FE_V2_0/FrontEnd
+### options for the executable without zeroth cepstral coeff. 
+#set options    = "-F RAW -fs 8 -noc0"
+### options for the executable with zeroth cepstral coeff.
+#set options    = "-F RAW -fs 8"
+### In case of working on a system with LITTLE_ENDIAN data storage
+### and reading the speech data in BIG_ENDIAN as they are on the CD
+set options    = "-F RAW -fs 8 -swap"
+############################################################
+
+set test_dirs = ( N1_SNR-5 N1_SNR15 N2_SNR-5 N2_SNR15 N3_SNR-5 N3_SNR15 N4_SNR-5 N4_SNR15 clean1 clean4 N1_SNR0 N1_SNR20 N2_SNR0 N2_SNR20 N3_SNR0 N3_SNR20 N4_SNR0 N4_SNR20 clean2 N1_SNR10 N1_SNR5  N2_SNR10 N2_SNR5 N3_SNR10 N3_SNR5 N4_SNR10 N4_SNR5 clean3 )
+
+set train_dirs = ( N1_SNR10 N1_SNR20 N2_SNR10 N2_SNR20 N3_SNR10 N3_SNR20 N4_SNR10 N4_SNR20 clean1 clean3 N1_SNR15 N1_SNR5 N2_SNR15 N2_SNR5 N3_SNR15 N3_SNR5 N4_SNR15 N4_SNR5 clean2 clean4 )
+
+#goto setc
+
+### create subdirectories for test sets a and b and c
+mkdir $FEAT_ROOT
+mkdir $FEAT_ROOT/Mfc08TS_seta
+mkdir $FEAT_ROOT/Mfc08TS_setb
+mkdir $FEAT_ROOT/Mfc08TS_setc
+set ndirs = $#test_dirs
+while ($ndirs > 0)
+	mkdir $FEAT_ROOT/Mfc08TS_seta/$test_dirs[$ndirs]
+	mkdir $FEAT_ROOT/Mfc08TS_setb/$test_dirs[$ndirs]
+	mkdir $FEAT_ROOT/Mfc08TS_setc/$test_dirs[$ndirs]
+	@ ndirs--
+end
+### create subdirectories for multicondition training
+mkdir $FEAT_ROOT/Mfc08_multiTR
+set ndirs = $#train_dirs
+while ($ndirs > 0)
+	mkdir $FEAT_ROOT/Mfc08_multiTR/$train_dirs[$ndirs]
+	@ ndirs--
+end
+### create subdirectory for clean training
+mkdir $FEAT_ROOT/Mfc08_cleanTR
+
+### perform feature extraction for multicondition training data
+set list_file   = $REC_DIR{/SCRIPTS/MULTITR08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+while ($nfiles > 0)
+	$EXE $options $SPEECH_ROOT/$in_files[$nfiles] $FEAT_ROOT/$out_files[$nfiles]
+	@ nfiles--
+end
+
+### perform feature extraction for clean training data
+set list_file   = $REC_DIR{/SCRIPTS/CLEANTR08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+while ($nfiles > 0)
+	$EXE $options $SPEECH_ROOT/$in_files[$nfiles] $FEAT_ROOT/$out_files[$nfiles]
+	@ nfiles--
+end
+
+### perform feature extraction for test set a data
+set list_file   = $REC_DIR{/SCRIPTS/TSA08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+set count = 1
+while ($count <= $nfiles)
+	$EXE $options $SPEECH_ROOT/$in_files[$count] $FEAT_ROOT/$out_files[$count]
+	@ count++
+end
+
+setb:
+### perform feature extraction for test set b data
+set list_file   = $REC_DIR{/SCRIPTS/TSB08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+set count = 1
+while ($count <= $nfiles)
+	$EXE $options $SPEECH_ROOT/$in_files[$count] $FEAT_ROOT/$out_files[$count]
+	@ count++
+end
+
+setc:
+### perform feature extraction for test set c data
+set list_file   = $REC_DIR{/SCRIPTS/TSC08_HCOPY.SCP}
+set in_files   = `awk '{print $1}' $list_file`
+set out_files  = `awk '{print $2}' $list_file`
+set nfiles     = $#in_files
+set count = 1
+while ($count <= $nfiles)
+	$EXE $options $SPEECH_ROOT/$in_files[$count] $FEAT_ROOT/$out_files[$count]
+	@ count++
+end
+

@@ -1,0 +1,22 @@
+***************************************************************************
+ETSI/AURORA PROJECT
+Ericsson Eurolab Germany - January, 20th 2000.
+***************************************************************************
+
+
+List of files and subdirectories
+---------------------------------------------------
+ This directory contains the following files:
+
+./create_pattern	: tcsh shell script to perform feature extraction (DSR FE-v2.0)
+./train_recog_clean	: csh shell script to do HTK training on clean data and recognition on all test sets
+./train_recog_multi	: csh shell script to do HTK training on multi-condition data and recognition on all test sets
+./create_pattern_htk	: csh shell script to perform feature extraction with HTK
+
+Furthermore this directory contains the following subdirectories:
+./bin		  : C sources of some small auxiliary programs
+./labels	  : Master-label files in HTK format
+./lib		  : Files needed for HTK training and recognition
+./scripts         : HTK-"script" files containing lists of data
+./results_fe_v2.0 : ASCII files containing the recognition results for DSR FE-v2.0
+./results_htk     : ASCII files containing the recognition results for HTK front-end

@@ -1,0 +1,107 @@
+#!/bin/csh -fex
+
+
+set FILE_DIR    = /home/mit/End2End/test1/testC/multi
+set LABEL_DIR   = /home/mit/End2End/testClabel
+set RESULT_DIR  = /home/mit/End2End/test1
+
+# Test Data Parameters
+
+set clean1L     = $LABEL_DIR/clean1_label.MLF
+set clean1R     = $FILE_DIR/clean1_results.MLF
+set clean2L     = $LABEL_DIR/clean2_label.MLF
+set clean2R     = $FILE_DIR/clean2_results.MLF
+
+set N1_20L      = $LABEL_DIR/N1_SNR20_label.MLF
+set N1_20R      = $FILE_DIR/N1_SNR20_results.MLF
+set N1_15L      = $LABEL_DIR/N1_SNR15_label.MLF
+set N1_15R      = $FILE_DIR/N1_SNR15_results.MLF
+set N1_10L      = $LABEL_DIR/N1_SNR10_label.MLF
+set N1_10R      = $FILE_DIR/N1_SNR10_results.MLF
+set N1_5L       = $LABEL_DIR/N1_SNR5_label.MLF
+set N1_5R       = $FILE_DIR/N1_SNR5_results.MLF
+set N1_0L       = $LABEL_DIR/N1_SNR0_label.MLF
+set N1_0R       = $FILE_DIR/N1_SNR0_results.MLF
+set N1_n5L      = $LABEL_DIR/N1_SNR-5_label.MLF
+set N1_n5R      = $FILE_DIR/N1_SNR-5_results.MLF
+
+set N2_20L      = $LABEL_DIR/N2_SNR20_label.MLF
+set N2_20R      = $FILE_DIR/N2_SNR20_results.MLF
+set N2_15L      = $LABEL_DIR/N2_SNR15_label.MLF
+set N2_15R      = $FILE_DIR/N2_SNR15_results.MLF
+set N2_10L      = $LABEL_DIR/N2_SNR10_label.MLF
+set N2_10R      = $FILE_DIR/N2_SNR10_results.MLF
+set N2_5L       = $LABEL_DIR/N2_SNR5_label.MLF
+set N2_5R       = $FILE_DIR/N2_SNR5_results.MLF
+set N2_0L       = $LABEL_DIR/N2_SNR0_label.MLF
+set N2_0R       = $FILE_DIR/N2_SNR0_results.MLF
+set N2_n5L      = $LABEL_DIR/N2_SNR-5_label.MLF
+set N2_n5R      = $FILE_DIR/N2_SNR-5_results.MLF
+
+
+set Cha_LISTSP  = /home/mit/End2End/Cha
+
+
+#Subway(MIRS)
+
+printf "\nSubway(MIRS)   condition: clean1\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $clean1L $Cha_LISTSP $clean1R >> $RESULT_DIR/multi_testc.result
+
+printf "\nSubway(MIRS)   condition: N1_SNR20\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N1_20L $Cha_LISTSP $N1_20R >> $RESULT_DIR/multi_testc.result
+
+printf "\nSubway(MIRS)   condition: N1_SNR15\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N1_15L $Cha_LISTSP $N1_15R >> $RESULT_DIR/multi_testc.result
+
+printf "\nSubway(MIRS)   condition: N1_SNR10\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N1_10L $Cha_LISTSP $N1_10R >> $RESULT_DIR/multi_testc.result
+
+printf "\nSubway(MIRS)   condition: N1_SNR5\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N1_5L $Cha_LISTSP $N1_5R >> $RESULT_DIR/multi_testc.result
+
+printf "\nSubway(MIRS)   condition: N1_SNR0\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N1_0L $Cha_LISTSP $N1_0R >> $RESULT_DIR/multi_testc.result
+
+printf "\nSubway(MIRS)   condition: N1_SNR-5\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N1_n5L $Cha_LISTSP $N1_n5R >> $RESULT_DIR/multi_testc.result
+
+#Street(MIRS)
+
+printf "\nStreet(MIRS)   condition: clean2\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $clean2L $Cha_LISTSP $clean2R >> $RESULT_DIR/multi_testc.result
+
+printf "\nStreet(MIRS)   condition: N2_SNR20\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N2_20L $Cha_LISTSP $N2_20R >> $RESULT_DIR/multi_testc.result
+
+printf "\nStreet(MIRS)   condition: N2_SNR15\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N2_15L $Cha_LISTSP $N2_15R >> $RESULT_DIR/multi_testc.result
+
+printf "\nStreet(MIRS)   condition: N2_SNR10\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N2_10L $Cha_LISTSP $N2_10R >> $RESULT_DIR/multi_testc.result
+
+printf "\nStreet(MIRS)   condition: N2_SNR5\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N2_5L $Cha_LISTSP $N2_5R >> $RESULT_DIR/multi_testc.result
+
+printf "\nStreet(MIRS)   condition: N2_SNR0\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N2_0L $Cha_LISTSP $N2_0R >> $RESULT_DIR/multi_testc.result
+
+printf "\nStreet(MIRS)   condition: N2_SNR-5\n" >> $RESULT_DIR/multi_testc.result
+
+HResults -e "???" sil -e "???" sp   -I $N2_n5L $Cha_LISTSP $N2_n5R >> $RESULT_DIR/multi_testc.result
+
+
+
+

@@ -1,0 +1,81 @@
+VERSION=1.0
+N=17   L=62   
+I=0    W=sil                 
+I=1    W=sp                  
+I=2    W=oh                  
+I=3    W=!NULL               
+I=4    W=zero                
+I=5    W=nine                
+I=6    W=eight               
+I=7    W=seven               
+I=8    W=six                 
+I=9    W=five                
+I=10   W=four                
+I=11   W=three               
+I=12   W=two                 
+I=13   W=one                 
+I=14   W=sil                 
+I=15   W=!NULL               
+I=16   W=!NULL               
+J=0     S=0    E=15   
+J=1     S=1    E=0    
+J=2     S=1    E=15   
+J=3     S=1    E=13   
+J=4     S=1    E=12   
+J=5     S=1    E=11   
+J=6     S=1    E=10   
+J=7     S=1    E=9    
+J=8     S=1    E=8    
+J=9     S=1    E=7    
+J=10    S=1    E=6    
+J=11    S=1    E=5    
+J=12    S=1    E=4    
+J=13    S=1    E=2    
+J=14    S=2    E=3    
+J=15    S=3    E=1    
+J=16    S=3    E=0    
+J=17    S=3    E=15   
+J=18    S=3    E=13   
+J=19    S=3    E=12   
+J=20    S=3    E=11   
+J=21    S=3    E=10   
+J=22    S=3    E=9    
+J=23    S=3    E=8    
+J=24    S=3    E=7    
+J=25    S=3    E=6    
+J=26    S=3    E=5    
+J=27    S=3    E=4    
+J=28    S=3    E=2    
+J=29    S=4    E=3    
+J=30    S=5    E=3    
+J=31    S=6    E=3    
+J=32    S=7    E=3    
+J=33    S=8    E=3    
+J=34    S=9    E=3    
+J=35    S=10   E=3    
+J=36    S=11   E=3    
+J=37    S=12   E=3    
+J=38    S=13   E=3    
+J=39    S=14   E=13   
+J=40    S=14   E=12   
+J=41    S=14   E=11   
+J=42    S=14   E=10   
+J=43    S=14   E=9    
+J=44    S=14   E=8    
+J=45    S=14   E=7    
+J=46    S=14   E=6    
+J=47    S=14   E=5    
+J=48    S=14   E=4    
+J=49    S=14   E=2    
+J=50    S=16   E=14   
+J=51    S=16   E=13   
+J=52    S=16   E=12   
+J=53    S=16   E=11   
+J=54    S=16   E=10   
+J=55    S=16   E=9    
+J=56    S=16   E=8    
+J=57    S=16   E=7    
+J=58    S=16   E=6    
+J=59    S=16   E=5    
+J=60    S=16   E=4    
+J=61    S=16   E=2    
