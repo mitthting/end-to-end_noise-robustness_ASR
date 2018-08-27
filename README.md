@@ -22,19 +22,19 @@ The running step is described as follows if using different speech recognizer
 Execution Steps : 
 1. 'DAE_AFE_lossweight.py'
 
-2. 'CTC/main/train.py'
+2. 'CTC / main / train.py'
 
-3. 'CTC/main/test.py'
+3. 'CTC / main/test.py'
 
-4. 'CTC WER/RECOG_TESTx' or 'CTC WER/test.sh'
+4. 'CTC WER / RECOG_TESTx' or 'CTC WER / test.sh'
 
 
 # denoise + GMM-HMM
 Execution Steps : 
 1. 'DAE_AFE_lossweight.py'
 
-2. 'npy-matlab-master/NPY2HTK.m'
+2. 'npy-matlab-master / NPY2HTK.m'
 
 3. 'mvmulti.sh'
 
-4. 'RECOGNIZER/train_recog_multi_etsi2' or 'RECOGNIZER/train_recog_clean_etsi2'
+4. 'RECOGNIZER / train_recog_multi_etsi2' or 'RECOGNIZER / train_recog_clean_etsi2'
