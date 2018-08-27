@@ -20,7 +20,7 @@ The running step is described as follows if using different speech recognizer
 
 # denoise + end-to-end
 Execution Steps : 
-1. 'DAE_AFE_lossweight.py'
+1.            'DAE_AFE_lossweight.py'
 
 2. 'CTC / main / train.py'
 
