@@ -6,7 +6,7 @@ System required :
 2. HTK 3.4.1 , if need to use GMM-HMM as recognizer
 3. Matlab 2014 or later version , if need to use HTK
 
-The required dataset will be upload as soon as possble.
+The required dataset will be uploaded as soon as possble.
 
 The files or folder are explained as following. 
 1. 'DAE_AFE_lossweight.py' : denoise speech feature
