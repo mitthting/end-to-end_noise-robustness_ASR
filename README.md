@@ -24,7 +24,7 @@ Execution Steps :
 
 2. 'CTC / main / train.py'
 
-3. 'CTC / main/test.py'
+3. 'CTC / main / test.py'
 
 4. 'CTC WER / RECOG_TESTx' or 'CTC WER / test.sh'
 
