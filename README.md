@@ -12,7 +12,7 @@ The files or folder are explained as following.
 1. 'DAE_AFE_lossweight.py' : denoise speech feature
 2. 'npy-matlab-master' : transform .npy format to HTK file fomat 
 3. 'mvmulti' : classify multi train data into 20 subsets, executed if need to use HTK
-4. 'CTC' : build ene-to-end speech recognition via CTC. This work is refered to [zzw922cn](https://github.com/zzw922cn/Automatic_Speech_Recognition) and simply modify
+4. 'CTC' : build ene-to-end speech recognition via CTC. This work refers to [zzw922cn](https://github.com/zzw922cn/Automatic_Speech_Recognition) and simply modify
 5. 'CTC WER' : calculate CTC word error rate based on the HTK scripts setting
 6. 'RECOGNIZER' : run GMM-HMM through HTK
 
