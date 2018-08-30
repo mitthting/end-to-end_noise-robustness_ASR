@@ -2,9 +2,11 @@
 This project provides speech denoise and speech recognition.
 
 System required :
-1. Python 2.7 or later version
-2. HTK 3.4.1 , if need to use GMM-HMM as recognizer
-3. Matlab 2015 or later version , if need to use HTK
+1. Python 2.7.x
+2. Tensorflow 1.6.0
+3. Keras 2.1.5
+4. HTK 3.4.1 , if need to use GMM-HMM as recognizer
+5. Matlab 2015 or later version , if need to use HTK
 
 The required dataset will be uploaded as soon as possible.
 
