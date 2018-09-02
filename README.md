@@ -8,12 +8,12 @@ System required :
 4. HTK 3.4.1 , if need to use GMM-HMM as recognizer
 5. Matlab 2015 or later version , if need to use HTK
 
-The required dataset will be uploaded as soon as possible.
+The speech feature contains [MFCC](https://drive.google.com/open?id=1Bju5ooZEwJO5eXi_18VSB2QkY-phimTj) and AFE features(https://drive.google.com/open?id=1gI1_6i9v2oH24vln4lCIoVW2opbQdFzo). All features are compose of 12 cepstrum and log-energy coefficient plus their corresponding first and second derivative (delta and acceleration) components.
 
 The files or folder are explained as following. 
 1. 'DAE_AFE_lossweight.py' : denoise speech feature
-2. 'npy-matlab-master' : transform .npy format to HTK file fomat 
-3. 'CTC' : build ene-to-end speech recognition via CTC. This work refers to [zzw922cn](https://github.com/zzw922cn/Automatic_Speech_Recognition) and simply modify
+2. 'npy-matlab-master' : transform .npy format to HTK file format 
+3. 'CTC' : build ene-to-end speech recognition via CTC. This work refers to [zzw922cn](https://github.com/zzw922cn/Automatic_Speech_Recognition)
 4. 'CTC WER' : calculate CTC word error rate based on the HTK scripts setting
 5. 'RECOGNIZER' : run GMM-HMM through HTK
 
