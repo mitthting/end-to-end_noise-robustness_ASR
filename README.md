@@ -8,7 +8,7 @@ System required :
 4. HTK 3.4.1 , if need to use GMM-HMM as recognizer
 5. Matlab 2015 or later version , if need to use HTK
 
-The speech feature contains [MFCC](https://drive.google.com/open?id=1Bju5ooZEwJO5eXi_18VSB2QkY-phimTj) and AFE features(https://drive.google.com/open?id=1gI1_6i9v2oH24vln4lCIoVW2opbQdFzo). All features are compose of 12 cepstrum and log-energy coefficient plus their corresponding first and second derivative (delta and acceleration) components.
+The speech feature contains [MFCC](https://drive.google.com/open?id=1Bju5ooZEwJO5eXi_18VSB2QkY-phimTj) and [AFE](https://drive.google.com/open?id=1gI1_6i9v2oH24vln4lCIoVW2opbQdFzo) features. All features are compose of 12 cepstrum and log-energy coefficient plus their corresponding first and second derivative (delta and acceleration) components.
 
 The files or folder are explained as following. 
 1. 'DAE_AFE_lossweight.py' : denoise speech feature
